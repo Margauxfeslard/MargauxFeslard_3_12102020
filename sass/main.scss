@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import "composants/bouton";
+@import "layout/footer";
+@import "layout/header";
+
+$font-family: 'Shrikhand', cursive;
+$primary-purple: #9356DC;
+$secondary-pink: #FF79DA;
+$tertiary-green: #99E2D0;
+
+body{
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 66px;
+  font-family: $font-family;
+}
