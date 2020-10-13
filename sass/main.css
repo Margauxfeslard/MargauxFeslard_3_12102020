@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-header {
-  text-align: center;
-}
-header h1 {
-  box-shadow: 0 15px 20px -6px #b3b3b3;
-  margin-bottom: 0;
-}
+/* Error: This file is already being loaded.
+ *   ,
+ * 1 | @import "../main";
+ *   |         ^^^^^^^^^
+ *   '
+ *   composants/_bouton.scss 1:9  @import
+ *   main.scss 6:9                root stylesheet */
 
-body {
-  margin: 0 auto;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: This file is already being loaded.\a   \2577 \a 1 \2502  @import "../main";\a   \2502          ^^^^^^^^^\a   \2575 \a   composants/_bouton.scss 1:9  @import\a   main.scss 6:9                root stylesheet';
 }
-
-h1 {
-  font-size: 66px;
-  font-family: "Shrikhand", cursive;
-}
-
-/*# sourceMappingURL=main.css.map */

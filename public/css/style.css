@@ -1,19 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-header {
-  text-align: center;
-}
-header h1 {
-  box-shadow: 0 15px 20px -6px #b3b3b3;
-  margin-bottom: 0;
-}
-
 body {
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
+  background-color: white;
+  font-size: 0.9em;
+  font-family: "Roboto", Verdana, Trebuchet, sans-serif;
 }
 
 h1 {
-  font-size: 66px;
-  font-family: "Shrikhand", cursive;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.btn {
+  padding: 15px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA 5%, #9356DC);
+  border-radius: 30px;
+  font-size: 1.1em;
+  width: 25%;
+  height: 2vh;
+  text-align: center;
+  font-family: "Roboto", Verdana, Trebuchet, sans-serif;
+  box-shadow: 2px 4px 8px 3px #dadade;
+}
+.btn__a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+form {
+  padding-bottom: 20px;
+}
+form input {
+  background-color: #F5F5F6;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  text-align: center;
+  font-size: 40px;
+}
+
+header {
+  text-align: center;
+  box-shadow: 2px 4px 8px 3px #dadade;
+}
+header img {
+  width: 45%;
+  padding: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

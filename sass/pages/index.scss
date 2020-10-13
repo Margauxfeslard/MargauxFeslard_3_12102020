@@ -1,0 +1,21 @@
+@import "../utils/mixins";
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 0.9em;
+  @include text;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1.2em;
+}

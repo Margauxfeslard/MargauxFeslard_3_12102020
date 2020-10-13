@@ -1,7 +1,8 @@
-header{
+header {
   text-align: center;
-  h1{
-    box-shadow: 0 15px 20px -6px #b3b3b3;
-    margin-bottom: 0;
+  @include box-shadow($color-bkg);
+  img {
+    width: 45%;
+    padding: 35px;
   }
 }
