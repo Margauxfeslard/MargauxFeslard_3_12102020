@@ -1,9 +1,12 @@
-@import "pages/index";
-@import "utils/mixins";
-@import "utils/variables";
+@import "base/base";
 @import "composants/bouton";
 @import "composants/form";
 @import "layout/footer";
 @import "layout/header";
+@import "pages/index";
+@import "utils/mixins";
+@import "utils/variables";
+
+
 
 

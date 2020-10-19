@@ -1,17 +1,13 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
 .btn {
-  padding: 15px;
-  color: white;
+  @include button(50%,4.8vh,white, 80px,2.6em, $color-bkg-light);
   background: linear-gradient(to bottom right, $secondary-pink 5%, $primary-purple);
-  border-radius: 30px;
-  font-size: 1.1em;
-  width: 25%;
-  height: 2vh;
-  text-align: center;
-  @include text;
-  @include box-shadow($color-bkg);
     &__a{
       text-decoration: none;
       color: white;
-      font-size: 22px;
+      font-weight: 500;
+      vertical-align: -webkit-baseline-middle;
     }
 }

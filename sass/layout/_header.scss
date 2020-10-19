@@ -1,6 +1,9 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
 header {
   text-align: center;
-  @include box-shadow($color-bkg);
+  @include box-shadow($color-bkg-light);
   img {
     width: 45%;
     padding: 35px;
