@@ -7,15 +7,14 @@
   &__heading {
     font-family: $font-title;
     color: darken($color-bkg-dark, 5%);
-    font-size: 1.3em;
     padding:40px;
     margin-top: 0;
   }
   &__menu {
     list-style-type: none;
     padding-left: 40px;
-    @include text;
     font-weight: bold;
+    font-size: 1.4rem;
     a {
       text-decoration: none;
       color: darken($color-bkg-dark, 10%);

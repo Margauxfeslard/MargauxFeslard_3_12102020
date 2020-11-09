@@ -8,4 +8,11 @@ header {
     width: 45%;
     padding: 35px;
   }
+  i{
+    color: darken($color-bkg-dark, 70%);
+    font-size: 4em;
+    position: absolute;
+    top: 2.5vh;
+    left: 8%;
+  }
 }

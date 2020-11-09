@@ -9,6 +9,7 @@ form{
     border:none;
     text-align: center;
     font-size: 40px;
+    color: darken($color-bkg-dark, 70%);
     @include inset-box-shadow;
   }
 }

@@ -21,6 +21,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   box-sizing: border-box;
   width: 100%;
@@ -107,7 +113,51 @@ form input {
   border: none;
   text-align: center;
   font-size: 40px;
+  color: #383838;
   box-shadow: inset 0px 5px 9px -6px #a8a5a8;
+}
+
+.menu__section {
+  margin-top: 70px;
+}
+.menu__section .menu__section__title {
+  font-size: 2.6rem;
+  color: #515151;
+}
+.menu__section .menu__section__title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border-bottom: 6px solid #99E2D0;
+  padding-top: 6px;
+}
+.menu__section .menu__section__infos {
+  background-color: white;
+  display: flex;
+  padding: 10px 20px 10px 10px;
+  justify-content: space-between;
+  margin: 30px 15px;
+  border-radius: 35px;
+  color: #383838;
+  box-shadow: 2px 4px 8px 3px #dddddd;
+}
+.menu__section .menu__section__infos div {
+  padding: 30px;
+}
+.menu__section .menu__section__infos div p {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0 0;
+}
+.menu__section .menu__section__infos h3 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+.menu__section .menu__section__infos p {
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin-top: 5vh;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -117,15 +167,14 @@ form input {
 .footer__heading {
   font-family: "Shrikhand", cursive;
   color: #dddddd;
-  font-size: 1.3em;
   padding: 40px;
   margin-top: 0;
 }
 .footer__menu {
   list-style-type: none;
   padding-left: 40px;
-  font-family: "Roboto", Verdana, Trebuchet, sans-serif;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 .footer__menu a {
   text-decoration: none;
@@ -150,6 +199,13 @@ header {
 header img {
   width: 45%;
   padding: 35px;
+}
+header i {
+  color: #383838;
+  font-size: 4em;
+  position: absolute;
+  top: 2.5vh;
+  left: 8%;
 }
 
 .present {
@@ -218,6 +274,32 @@ header img {
 }
 .restaurant__choice {
   padding-bottom: 100px;
+}
+
+.img__restaurants {
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 100px 100px 0 0;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+  margin-top: -8vh;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  color: #111111;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 30px;
+}
+.menu__title i {
+  font-size: 3em;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

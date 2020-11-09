@@ -1,0 +1,28 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.img__restaurants{
+  width: 100%;
+}
+
+.menu{
+  background-color: $color-bkg-light;
+  border-radius: 100px 100px 0 0;
+  padding: 30px;
+  position:relative;
+  z-index: 2;
+  margin-top: -8vh;
+  &__title{
+    font-family: $font-title;
+    color: darken($color-bkg-dark, 85%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 30px;
+    i{
+      font-size: 3em;
+      margin: 20px;
+    }
+  }
+}
