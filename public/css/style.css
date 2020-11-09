@@ -113,6 +113,7 @@ form input {
   border: none;
   text-align: center;
   font-size: 40px;
+  color: #383838;
   box-shadow: inset 0px 5px 9px -6px #a8a5a8;
 }
 
@@ -166,15 +167,14 @@ form input {
 .footer__heading {
   font-family: "Shrikhand", cursive;
   color: #dddddd;
-  font-size: 1.3em;
   padding: 40px;
   margin-top: 0;
 }
 .footer__menu {
   list-style-type: none;
   padding-left: 40px;
-  font-family: "Roboto", Verdana, Trebuchet, sans-serif;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 .footer__menu a {
   text-decoration: none;
@@ -199,6 +199,13 @@ header {
 header img {
   width: 45%;
   padding: 35px;
+}
+header i {
+  color: #383838;
+  font-size: 4em;
+  position: absolute;
+  top: 2.5vh;
+  left: 8%;
 }
 
 .present {
@@ -286,7 +293,7 @@ header img {
   color: #111111;
   display: flex;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
   padding: 30px;
 }
