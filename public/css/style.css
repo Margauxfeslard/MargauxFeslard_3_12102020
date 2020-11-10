@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
@@ -102,8 +103,25 @@ h3 {
   font-weight: lighter;
 }
 .restaurant__cards__infos i {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: lighter;
+}
+.restaurant__cards__infos .fa-heart:hover::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: bold;
+  color: #9356DC;
+}
+.restaurant__cards__new {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #99E2D0;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 2.6em;
+  color: #2c9c81;
 }
 
 form input {
@@ -132,6 +150,7 @@ form input {
   padding-top: 6px;
 }
 .menu__section .menu__section__infos {
+  position: relative;
   background-color: white;
   display: flex;
   padding: 10px 20px 10px 10px;
@@ -139,7 +158,32 @@ form input {
   margin: 30px 15px;
   border-radius: 35px;
   color: #383838;
+  animation: box-appear 2.5s;
   box-shadow: 2px 4px 8px 3px #dddddd;
+}
+.menu__section .menu__section__infos__hover {
+  display: none;
+  position: relative;
+}
+.menu__section .menu__section__infos__hover .fa-check-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rota;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.menu__section .menu__section__infos:hover .menu__section__infos__hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 66%;
+  border-radius: 0 35px 35px 0;
+  background-color: #99E2D0;
 }
 .menu__section .menu__section__infos div {
   padding: 30px;
@@ -300,6 +344,12 @@ header i {
 .menu__title i {
   font-size: 3em;
   margin: 20px;
+}
+.menu__title .fa-heart:hover::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: bold;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

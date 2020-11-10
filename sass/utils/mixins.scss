@@ -29,3 +29,10 @@
   color: $text-color;
   font-size: $font-size;
 }
+
+@mixin heart-hover{
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: bold;
+  color: $primary-purple;
+}

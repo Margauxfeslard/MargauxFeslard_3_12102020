@@ -15,6 +15,7 @@
     }
   }
   .menu__section__infos{
+    position: relative;
     background-color: white;
     display: flex;
     padding: 10px 20px 10px 10px;
@@ -22,7 +23,34 @@
     margin: 30px 15px;
     border-radius: 35px;
     color: darken($color-bkg-dark, 70%);
+    animation: box-appear 2.5s;
     @include box-shadow($color-bkg-light);
+    &__hover{
+      display: none;
+      position: relative;
+      .fa-check-circle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: rota;
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    &:hover{
+      .menu__section__infos__hover{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10%;
+        height: 66%;
+        border-radius: 0 35px 35px 0;
+        background-color: $tertiary-green;
+      }
+    }
     div{
       padding: 30px;
       p{

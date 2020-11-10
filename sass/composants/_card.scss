@@ -31,9 +31,22 @@
       font-weight: lighter;
     }
     i{
-      font-size: 4em;
+      font-size: 4rem;
       font-weight: lighter;
-
     }
+    .fa-heart:hover::before{
+      @include heart-hover
+    }
+  }
+  &__new{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: $tertiary-green;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 2.6em;
+    color: darken($tertiary-green, 35%);
   }
 }
