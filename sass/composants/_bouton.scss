@@ -2,12 +2,15 @@
 @import "../utils/variables";
 
 .btn {
-  @include button(50%,4.8vh,white, 80px,2.6em, $color-bkg-light);
+  @include button(50%, white, 80px,2.6em, $color-bkg-light);
   background: linear-gradient(to bottom right, $secondary-pink 5%, $primary-purple);
     &__a{
       text-decoration: none;
       color: white;
       font-weight: 500;
-      vertical-align: -webkit-baseline-middle;
     }
+  &:hover{
+    background: linear-gradient(to bottom right, darken($secondary-pink, 15%), $primary-purple);
+    @include box-shadow($color-bkg-dark);
+  }
 }

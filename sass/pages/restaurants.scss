@@ -10,7 +10,6 @@
   border-radius: 100px 100px 0 0;
   padding: 30px;
   position:relative;
-  z-index: 2;
   margin-top: -8vh;
   &__title{
     font-family: $font-title;
@@ -18,14 +17,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
-    font-weight: normal;
     padding: 30px;
     i{
+      font-weight: normal;
       font-size: 3em;
       margin: 20px;
-    }
-    .fa-heart:hover::before{
-      @include heart-hover;
     }
   }
 }

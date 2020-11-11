@@ -34,9 +34,6 @@
       font-size: 4rem;
       font-weight: lighter;
     }
-    .fa-heart:hover::before{
-      @include heart-hover
-    }
   }
   &__new{
     position: absolute;
