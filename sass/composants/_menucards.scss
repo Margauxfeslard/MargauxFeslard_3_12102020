@@ -1,73 +1,98 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-.menu__section{
-  margin-top: 70px;
-  .menu__section__title{
-    font-size: 2.6rem;
-    color: darken($color-bkg-dark, 60%);
-    &::after { //
-      content: "";
+.menu__section {
+  h4 {
+    font-weight: 200;
+    font-size: 3em;
+    &::after {
       display: block;
+      content: "";
+      height: 5px;
       width: 10%;
-      border-bottom: 6px solid $tertiary-green;
-      padding-top: 6px;
+      background: $tertiary-green;
     }
   }
-  .menu__section__infos{
-    position: relative;
+  .menu__section__infos {
+    cursor: pointer;
     background-color: white;
-    display: flex;
-    padding: 10px 20px 10px 10px;
-    justify-content: space-between;
-    margin: 30px 15px;
-    border-radius: 35px;
-    color: darken($color-bkg-dark, 70%);
-    animation: box-appear 2.5s;
+    position: relative;
+    border-radius: 30px;
     @include box-shadow($color-bkg-light);
-    &__hover{
-      display: none;
-      position: relative;
-      .fa-check-circle{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: rota;
-        font-size: 3rem;
-        font-weight: bold;
-        color: white;
+    margin: 20px 0;
+    display: flex;
+    &:hover .check {
+      width: 25%;
+      > .fa-check-circle {
+        opacity: 1;
+        animation: rotation 400ms linear;
       }
     }
-    &:hover{
-      .menu__section__infos__hover{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 10%;
-        height: 66%;
-        border-radius: 0 35px 35px 0;
-        background-color: $tertiary-green;
+  }
+  .choice {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 2.6rem;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-areas:
+        "text1 ."
+        "text2 price";
+    p {
+      display: block;
+      &:nth-child(1) {
+        grid-area: text1;
+        font-weight: 700;
       }
-    }
-    div{
-      padding: 30px;
-      p{
-        font-size: 2rem;
-        font-weight: lighter;
-        margin: 10px 0 0 0;
+      &:nth-child(2) {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        grid-area: text2;
+        font-size: 2.4rem;
+        font-weight: 200;
+
       }
-    }
-    h3{
-      font-size: 2.6rem;
-      margin: 0;
-    }
-    p{
-      font-weight: 800;
-      font-size: 2.4rem;
-      margin-top: 5vh;
-      margin-bottom: 0;
+      &:nth-child(3) {
+        grid-area: price;
+        font-size: 2.4rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
 }
+// check
+.check {
+  transition: width 500ms linear;
+  width: 0;
+  right: 0;
+  background-color: $tertiary-green;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  justify-content: center;
+  transform-origin: right center;
+  display: flex;
+  align-items: center;
+  .fa-check-circle {
+    opacity: 0;
+    font-size: 3em;
+  }
+}
+
+
+@keyframes rotation {
+  from {
+    z-index:1;
+    transform: rotate(0);
+  } 50% {
+      transform: rotate(180deg);
+    } to {
+        z-index:1;
+        transform: rotate(360deg);
+      }
+}
+

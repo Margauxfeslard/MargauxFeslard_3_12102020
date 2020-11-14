@@ -301,75 +301,96 @@ form input {
     opacity: 1;
   }
 }
-.menu__section {
-  margin-top: 70px;
+.menu__section h4 {
+  font-weight: 200;
+  font-size: 3em;
 }
-.menu__section .menu__section__title {
-  font-size: 2.6rem;
-  color: #515151;
-}
-.menu__section .menu__section__title::after {
-  content: "";
+.menu__section h4::after {
   display: block;
+  content: "";
+  height: 5px;
   width: 10%;
-  border-bottom: 6px solid #99E2D0;
-  padding-top: 6px;
+  background: #99E2D0;
 }
 .menu__section .menu__section__infos {
-  position: relative;
+  cursor: pointer;
   background-color: white;
-  display: flex;
-  padding: 10px 20px 10px 10px;
-  justify-content: space-between;
-  margin: 30px 15px;
-  border-radius: 35px;
-  color: #383838;
-  animation: box-appear 2.5s;
-  box-shadow: 2px 4px 8px 3px #dddddd;
-}
-.menu__section .menu__section__infos__hover {
-  display: none;
   position: relative;
+  border-radius: 30px;
+  box-shadow: 2px 4px 8px 3px #dddddd;
+  margin: 20px 0;
+  display: flex;
 }
-.menu__section .menu__section__infos__hover .fa-check-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: rota;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
+.menu__section .menu__section__infos:hover .check {
+  width: 25%;
 }
-.menu__section .menu__section__infos:hover .menu__section__infos__hover {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10%;
-  height: 66%;
-  border-radius: 0 35px 35px 0;
-  background-color: #99E2D0;
+.menu__section .menu__section__infos:hover .check > .fa-check-circle {
+  opacity: 1;
+  animation: rotation 400ms linear;
 }
-.menu__section .menu__section__infos div {
-  padding: 30px;
-}
-.menu__section .menu__section__infos div p {
-  font-size: 2rem;
-  font-weight: lighter;
-  margin: 10px 0 0 0;
-}
-.menu__section .menu__section__infos h3 {
-  font-size: 2.6rem;
+.menu__section .choice {
+  width: 100%;
+  padding: 0 10px;
   margin: 0;
+  font-size: 2.6rem;
+  display: grid;
+  grid-template-rows: 70px;
+  grid-template-areas: "text1 ." "text2 price";
 }
-.menu__section .menu__section__infos p {
-  font-weight: 800;
+.menu__section .choice p {
+  display: block;
+}
+.menu__section .choice p:nth-child(1) {
+  grid-area: text1;
+  font-weight: 700;
+}
+.menu__section .choice p:nth-child(2) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  grid-area: text2;
   font-size: 2.4rem;
-  margin-top: 5vh;
-  margin-bottom: 0;
+  font-weight: 200;
+}
+.menu__section .choice p:nth-child(3) {
+  grid-area: price;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.check {
+  transition: width 500ms linear;
+  width: 0;
+  right: 0;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  justify-content: center;
+  transform-origin: right center;
+  display: flex;
+  align-items: center;
+}
+.check .fa-check-circle {
+  opacity: 0;
+  font-size: 3em;
+}
+
+@keyframes rotation {
+  from {
+    z-index: 1;
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    z-index: 1;
+    transform: rotate(360deg);
+  }
+}
 .footer {
   background: #313132;
   padding-bottom: 20px;
