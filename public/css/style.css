@@ -301,6 +301,19 @@ form input {
     opacity: 1;
   }
 }
+.menu__section {
+  animation: revelation 800ms both ease-in-out;
+}
+@keyframes revelation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu__section h4 {
   font-weight: 200;
   font-size: 3em;
