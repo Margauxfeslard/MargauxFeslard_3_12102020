@@ -17,12 +17,11 @@
   box-shadow: inset 0px 5px 9px -6px rgba(168,165,168,1);
 }
 
-@mixin button($width, $height, $text-color, $margin, $font-size, $box-shadow-color){
+@mixin button($width, $text-color, $margin, $font-size, $box-shadow-color){
   margin: $margin auto;
-  padding: 20px 15px;
+  padding: 40px 15px;
   border-radius: 60px;
   width: $width;
-  height: $height;
   text-align: center;
   @include box-shadow($box-shadow-color);
   text-decoration: none;
