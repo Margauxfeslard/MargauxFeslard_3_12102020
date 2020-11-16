@@ -6,7 +6,7 @@
   font-size: 1.4em;
   &:hover {
     cursor: pointer;
-    color: transparent;
+    color: white;
     font-weight: 900;
     & .heart__anim {
       position: absolute;
@@ -14,6 +14,7 @@
       left: 0;
       opacity: 1;
       z-index: 1;
+      font-weight: 900;
       transform: scale(1);
     }
   }
@@ -24,8 +25,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient($secondary-pink, $primary-purple);
-    -webkit-background-clip: text !important;
+    background: linear-gradient($secondary-pink, $primary-purple);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     z-index: -1;

@@ -170,7 +170,7 @@ form input {
 }
 .heart:hover {
   cursor: pointer;
-  color: transparent;
+  color: white;
   font-weight: 900;
 }
 .heart:hover .heart__anim {
@@ -179,6 +179,7 @@ form input {
   left: 0;
   opacity: 1;
   z-index: 1;
+  font-weight: 900;
   transform: scale(1);
 }
 .heart__anim {
@@ -187,8 +188,8 @@ form input {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text !important;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: -1;
