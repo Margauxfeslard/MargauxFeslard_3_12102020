@@ -14,3 +14,6 @@ Project is created with:
 * HTML5
 * CSS
 * FontAwesome
+
+## Setup
+Github Pages : https://margauxfeslard.github.io/MargauxFeslard_3_12102020/
