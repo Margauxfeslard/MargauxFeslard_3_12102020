@@ -7,28 +7,29 @@
   &__heading {
     font-family: $font-title;
     color: darken($color-bkg-dark, 5%);
-    padding:40px;
+    font-size: 1.4rem;
+    padding:20px;
     margin-top: 0;
   }
   &__menu {
     list-style-type: none;
-    padding-left: 40px;
+    padding-left: 20px;
     font-weight: bold;
     font-size: 1.4rem;
+    margin:0;
     a {
       text-decoration: none;
+      font-size: 1rem;
       color: darken($color-bkg-dark, 10%);
       &:hover {
         color: $primary-purple;
       }
     }
-    li{
-      margin-bottom: 30px;
-    }
   }
   &__icon {
-    margin-right: 30px;
+    margin-right: 10px;
     width: 3%;
+    font-size: 1rem;
     color: darken($color-bkg-dark, 5%);
   }
 }

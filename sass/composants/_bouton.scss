@@ -2,7 +2,13 @@
 @import "../utils/variables";
 
 .btn {
-  @include button(50%, white, 80px,2.6em, $color-bkg-light);
+  @include respond-to(tablet){
+    @include button(40%, white, 30px,1.4em, $color-bkg-light);
+  }
+  @include respond-to(desktop){
+    @include button(30%, white, 30px,1.4em, $color-bkg-light);
+  }
+  @include button(65%, white, 30px,1.4em, $color-bkg-light);
   background: linear-gradient(to bottom right, $secondary-pink 5%, $primary-purple);
     &__a{
       text-decoration: none;
