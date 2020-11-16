@@ -339,6 +339,11 @@ form input {
     padding: 0 150px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+  .menu__section {
+    width: 33%;
+  }
+}
 @keyframes revelation {
   0% {
     opacity: 0;
