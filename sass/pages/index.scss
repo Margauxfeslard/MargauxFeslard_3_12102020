@@ -6,26 +6,46 @@
   text-align: center;
   background-color: $color-bkg-light;
   &__heading{
-    padding: 100px 140px 30px 140px;
+    padding: 40px 40px 10px 40px;
+    font-size: 1.8rem;
   }
   &__byline{
     font-weight: 300;
+    font-size: 1.4rem;
     color: #807c7c;
+    padding: 0 15px;
   }
 }
 
 .navigation{
+  @include respond-to(desktop){
+    padding: 0 250px;
+  }
+  @include respond-to(tablet){
+    padding: 0 150px;
+  }
   margin: 0 auto;
+  margin-bottom: 80px;
   h2{
-    margin: 100px 0 50px 80px;
+    margin: 50px 0 50px 15px;
+    font-size: 2em;
   }
     &__infos{
       background-color: #F5F5F6;
-      width: 80%;
-      border-radius: 50px;
+      @include respond-to(desktop){
+        width: 50%
+      }
+      @include respond-to(tablet){
+        width: 80%
+      }
+      width: 75%;
+      border-radius: 25px;
       box-shadow: 2px 4px 8px 3px #e4e4e7;
-      margin: 50px auto;
+      margin: 25px auto;
       font-size: 1.1em;
+      @include respond-to(smartphoneXs){
+        font-size: 0.7em;
+      }
       position: relative;
       &:hover{
         cursor: pointer;
@@ -36,21 +56,21 @@
       }
       p{
         position: absolute;
-        top: 30px;
-        left: -22px;
+        top: 10px;
+        left: -17px;
         background: #9356DC;
-        padding: 8px 15px;
+        padding: 6px 10px;
         border-radius: 50%;
-        font-size: 1.8em;
+        font-size: 1em;
         color: #FFF;
       }
       i{
-        margin: 60px 60px 60px 100px;
+        margin: 30px 20px 30px 40px;
         color: #8a8a95;
-        font-size: 1.6em;
+        font-size: 1.4em;
       }
       a{
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: 400;
         text-decoration: none;
         color: black;
@@ -61,9 +81,18 @@
 .restaurant{
   background-color: $color-bkg-dark;
   h2{
-    padding: 130px 40px 30px 40px;
+    padding: 60px 40px 10px 40px;
+    font-size: 1.8rem;
   }
   &__choice{
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+    @include respond-to(desktop){
+      display: flex;
+    }
+    @include respond-to(tablet){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }

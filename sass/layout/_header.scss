@@ -5,14 +5,28 @@ header {
   text-align: center;
   @include box-shadow($color-bkg-light);
   img {
-    width: 45%;
-    padding: 35px;
+    @include respond-to(smartphoneXs){
+      width: 40%;
+      padding: 20px;
+    }
+    @include respond-to(smartphone){
+      width: 40%;
+      padding: 20px;
+    }
+    @include respond-to(tablet){
+      width: 25%;
+      padding: 20px;
+    }
+    @include respond-to(desktop){
+      width: 20%;
+      padding: 20px;
+    }
   }
   i{
     color: darken($color-bkg-dark, 70%);
-    font-size: 4em;
+    font-size: 2em;
     position: absolute;
-    top: 2.5vh;
+    top: 27px;
     left: 8%;
   }
 }

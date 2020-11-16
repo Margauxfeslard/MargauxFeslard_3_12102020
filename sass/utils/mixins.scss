@@ -19,7 +19,7 @@
 
 @mixin button($width, $text-color, $margin, $font-size, $box-shadow-color){
   margin: $margin auto;
-  padding: 40px 15px;
+  padding: 20px 10px;
   border-radius: 60px;
   width: $width;
   text-align: center;
@@ -27,4 +27,19 @@
   text-decoration: none;
   color: $text-color;
   font-size: $font-size;
+}
+
+@mixin respond-to($media) {
+  @if $media == desktop {
+    @media only screen and (min-width: 1200px ) and (max-width: 1900px) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: 700px) and (max-width: 1200px) { @content; }
+  }
+  @else if $media == smartphone {
+    @media only screen and (min-width: 350px) and (max-width: 700px) { @content; }
+  }
+  @else if $media == smartphoneXs {
+    @media only screen and (min-width: 100px) and (max-width: 350px) { @content; }
+  }
 }
