@@ -497,6 +497,16 @@ form input {
   font-size: 1rem;
   color: #dddddd;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+  .footer__icon {
+    width: 1%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .footer__icon {
+    width: 2%;
+  }
+}
 
 header {
   text-align: center;

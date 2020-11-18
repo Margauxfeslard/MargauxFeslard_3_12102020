@@ -27,6 +27,12 @@
     }
   }
   &__icon {
+    @include respond-to(desktop){
+      width: 1%;
+    }
+    @include respond-to(tablet){
+      width: 2%;
+    }
     margin-right: 10px;
     width: 3%;
     font-size: 1rem;
