@@ -556,7 +556,13 @@ header i {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1900px) {
   .navigation {
-    padding: 0 250px;
+    padding: 0 90px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+  .navigation .navigation__desktop {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
@@ -580,6 +586,7 @@ header i {
 @media only screen and (min-width: 1200px) and (max-width: 1900px) {
   .navigation__infos {
     width: 50%;
+    margin: 0 25px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 1200px) {

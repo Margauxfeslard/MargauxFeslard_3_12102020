@@ -18,8 +18,14 @@
 }
 
 .navigation{
-  @include respond-to(desktop){
-    padding: 0 250px;
+  @include  respond-to(desktop){
+    padding: 0 90px;
+  }
+  .navigation__desktop{
+    @include respond-to(desktop){
+      display: flex;
+      justify-content: space-between;
+    }
   }
   @include respond-to(tablet){
     padding: 0 150px;
@@ -33,7 +39,8 @@
     &__infos{
       background-color: #F5F5F6;
       @include respond-to(desktop){
-        width: 50%
+        width: 50%;
+        margin:0 25px;
       }
       @include respond-to(tablet){
         width: 80%
